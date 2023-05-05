@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(50, 51, 52);
+    scroll-behavior: smooth;
+    flex-direction: column;
+    display: flex;
+}
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    align-items: flex-start;
+    margin: auto;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navButtons {
+    width: auto;
+    height: auto;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navButtons a {
+    padding: 5px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    font-family: roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    align-items: flex-end;
+    color: #fbfbfb;
+}
+
+.navButtons a span {
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.navButtons a:hover {
+    color: rgb(82, 87, 91);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.name {
+    display: flex;
+    gap: 50px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.name h3 {
+    display: flex;
+    font-size: 120px;
+    color: #52575b;
+    font-family: roboto;
+    font-weight: lighter;
+}
+
+.profession {
+    gap: 10px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-size: 30px;
+    font-family: roboto;
+    align-items: flex-start;
+    color: #fbfbfb;
+}
+
+.profession h3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.aboutme {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    font-weight: normal;
+    color: #fbfbfb;
+    font-family: roboto;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.skills .heading {
+    width: auto;
+    height: auto;
+    display: flex;
+    border-bottom: 1px solid #52575b;
+}
+
+.skills .heading h3 {
+    font-size: 100px;
+    font-family: roboto;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: #fbfbfb;
+}
+
+.skills .heading h3 span {
+    color: #52575b;
+    margin-right: 30px;
+    font-size: 50px;
+}
+
+.skills .skillWriteUp {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.skills .skillWriteUp h4 {
+
+    font-weight: normal;
+    color: #fbfbfb;
+    font-family: roboto;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.skillset {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.skillset p {
+    color: #fbfbfb;
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.experiences {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.experiences .heading {
+    display: flex;
+    width: auto;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.experiences .heading h4 {
+    color: #52575b;
+    font-size: 40px;
+    width: auto;
+    font-family: roboto;
+    font-weight: lighter;
+}
+
+.experiences .heading .tag {
+    display: flex;
+    font-size: 100px;
+    font-family: roboto;
+    color: #fbfbfb;
+}.experiences .heading .tag span{
+    display: none;
+}
