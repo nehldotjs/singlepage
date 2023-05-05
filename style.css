@@ -7,9 +7,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(50, 51, 52);
-    scroll-behavior: smooth;
     flex-direction: column;
     display: flex;
 }
@@ -106,6 +109,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    gap: 20px;
 }
 
 .aboutme {
@@ -120,7 +124,27 @@ header {
     font-size: 15px;
 }
 
+.skills .certificateWrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+
+.skills .certificateWrapper img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
 .skills {
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -158,7 +182,6 @@ header {
 }
 
 .skills .skillWriteUp h4 {
-
     font-weight: normal;
     color: #fbfbfb;
     font-family: roboto;
@@ -172,9 +195,9 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     height: auto;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
 
 }
 
@@ -187,11 +210,30 @@ header {
     font-size: 20px;
 }
 
+.skills .myCerts {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .myCerts p strong {
+    font-weight: bold;
+    color: #fbfbfb;
+    display: flex;
+    font-family: roboto;
+    font-size: 15px;
+}
+
 .experiences {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto;
+    gap: 50px;
     justify-content: flex-start;
     align-items: flex-start;
 }
@@ -199,8 +241,9 @@ header {
 .experiences .heading {
     display: flex;
     width: auto;
-    gap: 20px;
+    /* gap: 20px; */
     align-items: flex-end;
+    border-bottom: 1px solid #52575b;
 }
 
 .experiences .heading h4 {
@@ -212,10 +255,507 @@ header {
 }
 
 .experiences .heading .tag {
-    display: flex;
-    font-size: 100px;
-    font-family: roboto;
     color: #fbfbfb;
-}.experiences .heading .tag span{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.experiences .heading .tag h3 {
+    font-size: 150px;
+    font-family: roboto;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.experiences .heading .tag span {
     display: none;
+}
+
+.experiences .projects {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.experiences .projects .project {
+    gap: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.experiences .projects .project h3 {
+    font-family: roboto;
+    font-weight: normal;
+    font-size: 40px;
+    color: #52575b;
+    text-transform: capitalize;
+}
+
+.experiences .projects .project .projectRole {
+    font-size: 25px;
+    font-family: roboto;
+    font-style: italic;
+    display: flex;
+    color: #52575b;
+}
+
+.experiences .projects .project .projectDescription {
+    display: flex;
+    color: #fbfbfb;
+    font-family: roboto;
+    font-size: 15px;
+}
+
+.experiences .projects .project .projectContributions {
+    display: flex;
+    flex-direction: column;
+    color: #fbfbfb;
+    font-family: roboto;
+    font-size: 15px;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact .heading {
+    display: flex;
+    width: auto;
+    /* gap: 20px; */
+    align-items: flex-end;
+    border-bottom: 1px solid #52575b;
+}
+
+.contact .heading h4 {
+    color: #52575b;
+    font-size: 40px;
+    width: auto;
+    font-family: roboto;
+    font-weight: lighter;
+}
+
+.contact .heading .tag {
+    color: #fbfbfb;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact .heading .tag h3 {
+    font-size: 150px;
+    font-family: roboto;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.contact .heading .tag span {
+    display: none;
+}
+
+.contact .writeUp {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.contact .writeUp h3 {
+    font-size: 15px;
+    color: #fbfbfb;
+    padding: 10px;
+    font-weight: lighter;
+    font-family: roboto;
+    display: flex;
+    width: 30%;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.socials .links {
+    color: #fbfbfb;
+    text-decoration: underline;
+    text-transform: capitalize;
+    display: flex;
+    align-items: flex-start;
+    font-family: roboto;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+}
+
+.socials .links::after {
+    height: 10px;
+    width: 100px;
+    display: flex;
+
+}
+
+.socials .links:hover {
+    color: #52575b;
+}
+.socials .links img{
+    height: 20px;
+    width: auto;
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+.mailButton {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+
+.mailButton .mailBtn {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    width: 50%;
+    height: auto;
+    padding: 10px;
+    font-family: roboto;
+    text-decoration: none;
+    color: #fff;
+    transition: 350ms all ease-in-out;
+    border: 1px solid #52575b;
+}
+
+.mailButton .mailBtn:hover {
+    background-color: #52575b;
+    color: #fbfbfb;
+}
+
+footer {
+    justify-content: flex-end;
+    align-items: flex-end;
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    color: #fbfbfb;
+    font-family: lato;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    display: flex;
+    width: auto;
+    padding: 5px 20px;
+    text-align: right;
+    background-color: #52575b;
+
+}
+
+@media screen and (max-width: 900px) {
+    .bodyWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        align-items: flex-start;
+        margin: auto;
+        gap: 50px;
+        padding-top: 50px;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .name {
+        display: flex;
+        gap: unset;
+        height: auto;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .name h3 {
+        display: flex;
+        font-size: 90px;
+        color: #52575b;
+        font-family: roboto;
+        font-weight: lighter;
+    }
+
+    .profession {
+        gap: 10px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 25px;
+        font-family: roboto;
+        align-items: flex-start;
+        color: #fbfbfb;
+    }
+
+    .profession h3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .aboutme {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+        font-weight: normal;
+        color: #fbfbfb;
+        font-family: roboto;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    .skills .heading {
+        width: auto;
+        height: auto;
+        display: flex;
+        border-bottom: 1px solid #52575b;
+    }
+
+    .skills .heading h3 {
+        font-size: 100px;
+        font-family: roboto;
+        font-weight: lighter;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: #fbfbfb;
+    }
+
+    .skills .heading h3 span {
+        color: #52575b;
+        margin-right: 30px;
+        font-size: 50px;
+    }
+
+    .skills .skillWriteUp {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .skills .skillWriteUp h4 {
+
+        font-weight: normal;
+        color: #fbfbfb;
+        font-family: roboto;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .skillset {
+        display: flex;
+        margin: auto;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+
+    }
+
+    .skillset p {
+        color: #fbfbfb;
+        font-family: roboto;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        font-size: 20px;
+        border: 1px solid #52575b;
+    }
+
+
+
+
+    .experiences .heading {
+        display: flex;
+        width: 100%;
+        gap: 20px;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #52575b;
+    }
+
+    .experiences .heading h4 {
+        color: #52575b;
+        font-size: 40px;
+        width: auto;
+        font-family: roboto;
+        font-weight: lighter;
+    }
+
+    .experiences .heading .tag {
+        color: #fbfbfb;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .experiences .heading .tag h3 {
+        font-size: 50px;
+        font-family: roboto;
+        font-weight: lighter;
+        display: flex;
+    }
+
+    .experiences .heading .tag span {
+        display: flex;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .contact .heading {
+        display: flex;
+        width: auto;
+        /* gap: 20px; */
+        align-items: flex-end;
+        border-bottom: 1px solid #52575b;
+    }
+
+    .contact .heading h4 {
+        color: #52575b;
+        font-size: 30px;
+        width: auto;
+        font-family: roboto;
+        font-weight: lighter;
+    }
+
+    .contact .heading .tag {
+        color: #fbfbfb;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact .heading .tag h3 {
+        font-size: 50px;
+        font-family: roboto;
+        font-weight: lighter;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+
+    .contact .heading .tag span {
+        display: none;
+    }
+
+    .contact .writeUp {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .contact .writeUp h3 {
+        font-size: 15px;
+        color: #fbfbfb;
+        padding: 10px;
+        font-weight: lighter;
+        font-family: roboto;
+        display: flex;
+        width: 70%;
+        text-align: right;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .socials .links {
+        color: #fbfbfb;
+        text-decoration: underline;
+        text-transform: capitalize;
+        display: flex;
+        align-items: flex-start;
+        font-family: roboto;
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+    }
+
+    .socials .links::after {
+        height: 10px;
+        width: 100px;
+        display: flex;
+
+    }
+
+    .socials .links:hover {
+        color: #52575b;
+    }
+
+    .mailButton {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+        padding: unset;
+    }
+
+    .mailButton .mailBtn {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        font-family: roboto;
+        text-decoration: none;
+        color: #fff;
+        transition: 350ms all ease-in-out;
+        border: 1px solid #52575b;
+    }
+
+    .mailButton .mailBtn:hover {
+        background-color: #52575b;
+        color: #fbfbfb;
+    }
+
 }
