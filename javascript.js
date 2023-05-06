@@ -69,6 +69,8 @@ const skillList = [
   "Scss",
   "FlexBox",
   "Grid",
+  "React Js",
+  "React Native",
   "React Hooks",
   "Git",
   "Github",
@@ -86,7 +88,7 @@ function renderSkills() {
 let certificates = [
   "./assets/nelson_osuya_Side_Hustle_Certificate.png",
   "./assets/Web capture_6-11-2022_0440_www.freecodecamp.org.jpeg",
-  "./assets/Web capture_6-11-2022_0055_www.freecodecamp.org.jpeg",
+  "./assets/Web capture_6-11-2022_0055_www.freecodecamp.org.jpeg"
 ];
 function renderCertificates() {
   certs.innerHTML = certificates

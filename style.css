@@ -208,8 +208,8 @@ header {
     justify-content: center;
     padding: 10px;
     font-size: 20px;
+    border: 1px solid #52575b;
 }
-
 .skills .myCerts {
     width: 100%;
     justify-content: space-between;
