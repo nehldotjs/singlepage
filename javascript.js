@@ -87,6 +87,7 @@ function renderSkills() {
 }
 let certificates = [
   "./assets/nelson_osuya_Side_Hustle_Certificate.png",
+  "./assets/certificate.png",
   "./assets/Web capture_6-11-2022_0440_www.freecodecamp.org.jpeg",
   "./assets/Web capture_6-11-2022_0055_www.freecodecamp.org.jpeg"
 ];
