@@ -30,8 +30,7 @@ const project = [
     id: 2,
     name: "delish",
     projectRole: "Frontend Dev",
-    description:
-      "shoppa is a Web-based application for purchasing clothing online",
+    description: "Online- restaurant food delivery app",
     contributions: [
       "Developed a responsive website using React JS to showcase my design skills and proficiency in front-end development. ",
       "Designed and implemented a static webpage using React JS and  css to demonstrate my ability to create visually appealing and user-friendly interfaces.",
